@@ -1,0 +1,223 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NITW</title>
+        <link rel="stylesheet" href="styles.css">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+            header {
+                display: flex;
+                align-items: center;
+                background: #004080;
+                color: white;
+                padding: 10px;
+            }
+            header img {
+                width: 60px;
+                margin-right: 10px;
+            }
+            nav {
+                background: #002060;
+                color: white;
+                padding: 10px;
+            }
+            .announcements {
+                background: yellow;
+                padding: 5px;
+                font-size: 16px;
+                text-align: center;
+            }
+            
+            .slider {
+                position: relative;
+                width: 80%;
+                margin: 10px auto;
+                overflow: hidden;
+            }
+            .slider-images {
+                display: flex;
+                width: 100%;
+                transition: transform 0.5s ease;
+            }
+            .slider img {
+                width: 80%;
+                height: auto;
+            }
+            .slider-controls {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                transform: translateY(-50%);
+            }
+            .slider-controls button {
+                background-color: rgba(0, 0, 0, 0.5);
+                color: white;
+                border: none;
+                padding: 10px;
+                cursor: pointer;
+            }
+            .slider-controls button:hover {
+                background-color: rgba(0, 0, 0, 0.8);
+            }
+         
+            .news, .campuslife {
+                padding: 20px;
+            }
+            footer {
+                background: #222;
+                color: white;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .description {
+                padding: 20px;
+                background: #f4f4f4;
+                margin-top: 20px;
+                text-align: center;
+            }
+
+
+            .campuslife-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 20px;
+                padding: 20px 0;
+                margin: 20px 0;
+            }
+
+            .campuslife-grid img {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+
+           
+            .news-images {
+                display: flex;
+                overflow-x: scroll;
+                gap: 20px;
+                padding: 10px 0;
+            }
+
+            .news-item {
+                flex: 0 0 auto;
+                width: 200px;
+            }
+
+            .news-item img {
+                width: 100%;
+                height: 150px;
+                object-fit: cover;
+                border-radius: 8px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://media.assettype.com/english-sentinelassam/import/h-upload/2022/01/24/302316-nitw-logojpeg.crdownload?w=1200&h=675&auto=format%2Ccompress&fit=max&enlarge=true" alt="logo">
+            <h1>NITW</h1>
+        </header>
+        <nav>
+            <h2>NITW OFFICIAL WEBSITE</h2>
+        </nav>
+
+        <section class="announcements">
+            <marquee>Important Announcements: Get ready for springs spree 2025 | Attendance new rules | DSA Assignments published | Mess menu updated | Fridays also not holidays | Fountain repaired, can fill the water|</marquee>
+        </section>
+
+        <section class="slider">
+            <div class="slider-images">
+                <img src="https://nitw.ac.in/api/static/files/welcome_to_NIT_WARANGAL_2023-4-15-16-35-49.jpg" alt="campus">
+                <img src="https://nitw.ac.in/api/static/files/Chemical_Engineering_2023-10-16-11-17-30.jpg" alt="campus2">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQneC8KbmYv2_G_gTe2hR-rk1rtczURyBP1EP29HS0_SFfmdJNQWEqg_21JTGQpNT6calc&usqp=CAU" alt="campus3">
+                <img src="https://nitw.ac.in/images/nitw3.jpg" alt="campus4">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20241209165333764164/National-Institute-of-Technology_Warangal.webp" alt="campus5">
+
+            </div>
+            <div class="slider-controls">
+                <button id="prevBtn">&#10094;</button>
+                <button id="nextBtn">&#10095;</button>
+            </div>
+        </section>
+
+    
+        <section class="description">
+            <h2>About NITW</h2>
+            <p>The National Institute of Technology Warangal (NITW) is one of the premier technical institutions in India. Established in 1959, it has been at the forefront of engineering education and research. With a vibrant campus life and cutting-edge facilities, NITW provides students with a holistic environment to excel in academics, extracurricular activities, and research.</p>
+        </section>
+
+        
+        <section class="news">
+            <h2>News & Upcoming Events</h2>
+            <div class="news-images">
+                <div class="news-item">
+                    <img src="https://th-i.thgim.com/public/news/cities/Hyderabad/8bzj59/article68023133.ece/alternates/LANDSCAPE_1200/National%20Institute%20of%20Technology%20Warangals%20Springspree%202024.jpg" alt="news1">
+                    <p>Springs Spree this Feb end</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://nitw.ac.in/tlc/photos/oer/36.jpg" alt="news2">
+                    <p>Online workshops are open for registration</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://nitw.ac.in/tlc/photos/pd1/5.jpg" alt="news3">
+                    <p>Faculty development programme to start by 9th March</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://images.shiksha.com/mediadata/images/articles/1722405872phpxzODjV.jpeg" alt="news3">
+                    <p>Placements stats here</p>
+                </div>
+                <div class="news-item">
+                    <img src="https://nitc.ac.in/imgserver/uploads/attachments/Ed__8c1537ce-ee5e-4952-a286-ae20511f8c56_.jpeg" alt="news3">
+                    <p>Inter-NIT Tournaments in Feb!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campus Life Section -->
+        <section class="campuslife">
+            <h2>Campus Life</h2>
+            <div class="campuslife-grid">
+                <img src="https://images.shiksha.com/mediadata/images/1488177802phprgepHz.jpeg" alt="p1">
+                <img src="https://nitw.ac.in/api/static/files/library_2022-7-15-7-21-31.jpg" alt="p2">
+                <img src="https://media.licdn.com/dms/image/v2/D5622AQFAzAr_NBtWfg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1712248634257?e=2147483647&v=beta&t=O1dkr_39CtbFUGLAzyWVboiozbBvkyvts06wydeNtbA" alt="p3">
+                <img src="https://nitw.ac.in/api/static/files/Yoga_Book_-_2023_2023-6-28-17-39-37.jpg" alt="p4">
+                <img src="https://nitw.ac.in/tlc/photos/oer/45.jpg" alt="p5">
+                <img src="https://www.nitw.ac.in/siemens/images/gallery/traingprog/Pilotprogram/1(10).jpeg" alt="p6">
+            </div>
+        <footer>
+            <p>&copy; 2025 NITW. All rights reserved.</p>
+        </footer>
+
+        <script>
+            const images = document.querySelectorAll('.slider-images img');
+            let currentImage = 0;
+
+            const nextBtn = document.getElementById('nextBtn');
+            const prevBtn = document.getElementById('prevBtn');
+
+            function showImage(index) {
+                const offset = -index * 100;
+                document.querySelector('.slider-images').style.transform = `translateX(${offset}%)`;
+            }
+
+            nextBtn.addEventListener('click', () => {
+                currentImage = (currentImage + 1) % images.length;
+                showImage(currentImage);
+            });
+
+            prevBtn.addEventListener('click', () => {
+                currentImage = (currentImage - 1 + images.length) % images.length;
+                showImage(currentImage);
+            });
+        </script>
+    </body>
+</html>
